@@ -1,0 +1,55 @@
+.videoArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .videoImage {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    // border-radius: 10px;
+    overflow: hidden;
+  
+    img {
+      width: 100%;
+      display: block;
+    //   border-radius: 10px;
+    }
+  
+    .videoBtn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        background-color: rgba(255, 0, 0, 0.8);
+        border-radius: 50%;
+        color: white;
+        font-size: 30px;
+        text-decoration: none;
+        transition: 0.3s;
+  
+        &:hover {
+          background-color: rgba(255, 0, 0, 1);
+        }
+      }
+    }
+  }
+  

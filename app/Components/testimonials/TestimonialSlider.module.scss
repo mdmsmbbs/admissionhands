@@ -1,0 +1,116 @@
+.testimonialArea {
+    padding-bottom: 75px;
+    text-align: center;
+  
+    .sectionTitle {
+      max-width: 600px;
+      margin: 0 auto 40px;
+      h2 {
+        font-size: 42px;
+        font-weight: bold;
+        color: rgb(0, 30, 67);
+      }
+    }
+  
+    .testimonialItem {
+
+      p {
+        font-size: 16px;
+        font-style: italic;
+        color: #5b5952;
+        text-align: left;
+        
+      }
+    }
+  
+    .swiper-btn {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+  
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+        background: #007bff;
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+  
+        &:hover {
+          background: #0056b3;
+        }
+      }
+    }
+  }
+
+  .testimonialItem{
+    // width: 300px;
+    background-color: #f6f6f6;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .container{
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+
+  .userList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #5b5952;
+
+
+    .user {
+      display: flex;
+      align-items: center;
+
+      .image {
+
+        display: flex;
+        overflow: hidden;
+        margin-right: 8px;
+        gap: 5px;
+
+        img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+
+      .content {
+        h3 {
+          font-size: 1.2rem;
+          margin: 0;
+          color: rgb(0, 30, 67);
+        }
+        span {
+          font-size: 0.9rem;
+          color: gray;
+        }
+      }
+    }
+
+    .starIcon {
+      display: flex;
+      gap: 5px;
+      svg {
+        color: #ffcc00;
+        font-size: 1.2rem;
+      }
+    }
+  }
