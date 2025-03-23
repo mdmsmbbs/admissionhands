@@ -1,0 +1,124 @@
+.navbar {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .brand {
+      img {
+        height: 40px;
+      }
+    }
+  
+    .toggler {
+      background: none;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+  
+      .burgerMenu {
+        display: flex;
+        flex-direction: column;
+  
+        .bar {
+          width: 25px;
+          height: 3px;
+          background-color: #333;
+          margin: 3px 0;
+        }
+      }
+    }
+  
+    .menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  
+      .navList {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+  
+        .navItem {
+          position: relative;
+          margin-right: 20px;
+  
+          &:hover .dropdown {
+            display: block;
+          }
+  
+          .navLink {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+  
+            &:hover {
+              color: #007bff;
+            }
+          }
+  
+          .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            list-style: none;
+            padding: 10px;
+            z-index: 1000;
+  
+            .dropdownLink {
+              text-decoration: none;
+              color: #333;
+              font-size: 14px;
+              padding: 5px 10px;
+              display: block;
+  
+              &:hover {
+                color: #007bff;
+              }
+            }
+  
+            .subDropdown {
+              position: absolute;
+              left: 100%;
+              top: 0;
+              display: none;
+  
+              &:hover {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+  
+      .options {
+        display: flex;
+        align-items: center;
+  
+        .button {
+          background-color: #007bff;
+          color: #fff;
+          text-decoration: none;
+          padding: 8px 15px;
+          border-radius: 4px;
+  
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+      }
+    }
+  }
+  

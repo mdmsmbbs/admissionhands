@@ -1,0 +1,57 @@
+.counterArea {
+  padding: 75px 0px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.colLg3 {
+  width: 23%;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+}
+
+.singleCounterInfo {
+  display: flex;
+  align-items: center;
+
+  .icon {
+    font-size: 40px;
+    color: #007bff;
+    margin-right: 15px;
+  }
+
+  .title {
+    h2 {
+      font-size: 60px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555;
+    }
+  }
+}
+
+.counter {
+  color: rgb(0, 30, 67);
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.justifyEnd {
+  justify-content: flex-end;
+}

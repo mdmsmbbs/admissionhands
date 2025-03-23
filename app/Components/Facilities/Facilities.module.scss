@@ -1,0 +1,107 @@
+.facilitiesArea {
+    padding-bottom: 75px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .imageContainer,
+  .contentContainer {
+    width: 48%; /* Taking up roughly half the space each */
+  }
+  
+  .facilitiesImage {
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .image2,
+    .shape4,
+    .shape5,
+    .shape6 {
+      position: absolute;
+      z-index: 1;
+    }
+  
+    .image2 {
+    bottom: -100px;
+    right: -26px;
+    }
+  
+    .shape4 {
+      bottom: 10px;
+    //   right: 10px;
+    }
+  
+    .shape5 {
+      top: 20px;
+      right: 110px;
+    }
+  
+    .shape6 {
+        right: 232px;
+    }
+  }
+  
+  .facilitiesContent {
+    .title {
+      margin-bottom: 20px;
+  
+      h2 {
+        font-size: 42px;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        font-size: 1rem;
+        color: #555;
+      }
+    }
+  
+    .facilitiesInfo {
+      margin-bottom: 15px;
+  
+      h3 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+  
+        span {
+          font-weight: normal;
+          color: #007bff;
+        }
+      }
+  
+      p {
+        font-size: 1rem;
+        color: #666;
+      }
+    }
+  
+    .applicationBtn {
+      a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+  

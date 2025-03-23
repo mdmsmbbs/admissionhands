@@ -1,0 +1,217 @@
+.banner {
+  .container {
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+  }
+
+  .imageSection {
+    flex: 1;
+    max-width: 50%;
+
+    .bannerImages {
+      position: relative;
+
+      img {
+        height: 100%;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 86px;
+        left: -33px;
+
+        .overlaySmall {
+          position: absolute;
+          top: 49px;
+          left: 48px;
+        }
+      }
+    }
+  }
+
+  .contentSection {
+    flex: 1;
+    max-width: 50%;
+
+    .bannerContent {
+      .header {
+        p {
+          font-size: 18px;
+          color: #555;
+
+          span {
+            color: #e74c3c;
+            font-weight: bold;
+          }
+        }
+
+        h1 {
+          font-size: 80px;
+          line-height: 1.2;
+          color: #002a5c;
+          margin-bottom: 20px;
+        }
+
+        p:last-child {
+          font-size: 16px;
+          color: #777;
+        }
+      }
+
+      .buttonGroup {
+        margin-top: 20px;
+        display: flex;
+        gap: 15px;
+
+        .primaryBtn {
+          background-color: #FA394A;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          font-size: 16px;
+          cursor: pointer;
+          display: flex;
+          font-weight: bold;
+          align-items: center;
+          // padding: 20px 20px;
+
+          .iconArrow {
+            margin-left: 8px;
+          }
+
+          svg {
+            margin-left: 10px;
+          }
+
+          &:hover {
+            color: rgb(0, 30, 67);
+            ;
+            text-decoration: underline;
+            background-color: initial;
+          }
+        }
+
+        .videoBtn {
+          display: flex;
+          align-items: center;
+          /* Vertically align buttons */
+          gap: 10px;
+          /* Add spacing between the play button and the secondary button */
+        }
+
+        .playIcon {
+          width: 56px;
+          /* Circle size */
+          height: 56px;
+          font-size: 24px;
+          /* Play icon size */
+          line-height: 56px;
+          /* Center the play icon vertically */
+          text-align: center;
+          /* Center the play icon horizontally */
+          border-radius: 50%;
+          /* Make the button circular */
+          display: inline-block;
+          background-color: #FFC333;
+          /* Yellow background */
+          color: #002855;
+          /* Navy color for the play icon */
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          /* Subtle shadow for depth */
+          transition: transform 0.2s ease;
+          /* Smooth hover effect */
+        }
+
+        .playIcon:hover {
+          transform: scale(1.1);
+          /* Slightly enlarge on hover */
+        }
+
+        .iconPlay::before {
+          content: "\25B6";
+          height: 100%;
+          width: 100%;
+          // transform: rotateX(61deg);
+          /* Unicode for play symbol (▶) */
+          font-size: inherit;
+          /* Inherit size from .playIcon */
+          display: inline-block;
+        }
+
+        .secondaryBtn {
+          color: #555;
+          text-decoration: underline;
+          display: inline-flex;
+          align-items: center;
+
+
+          .iconArrow {
+            margin-left: 8px;
+          }
+
+          &:hover {
+            color: #FA394A;
+            text-decoration: underline;
+            background-color: initial;
+          }
+        }
+
+      }
+
+      .userSection {
+        display: flex;
+        gap: 20px;
+        margin-top: 70px;
+        margin-left: 20px;
+        align-items: center;
+
+        .userImages {
+          display: flex;
+          gap: 10px;
+
+          img {
+            border-radius: 50%;
+            margin-left: -15px;
+          }
+        }
+
+        .userCount {
+          h2 {
+            font-size: 22px;
+            line-height: 1;
+            margin-bottom: 5px;
+          }
+
+          .counter {
+            color: rgb(0, 30, 67);
+            ;
+          }
+
+          p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #777;
+          }
+        }
+      }
+
+      .shape {
+        margin-top: 30px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

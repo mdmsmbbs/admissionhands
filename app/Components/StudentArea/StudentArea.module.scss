@@ -1,0 +1,105 @@
+.studentArea {
+    padding: 0 0 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .imageWrapper {
+    flex: 1;
+    // max-width: 300px;
+  
+    // img {
+    //   width: 100%;
+    //   height: 100%;
+    //   border-radius: 10px;
+    // }
+  }
+  
+  .studentCard {
+    flex: 1;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+  
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  
+      li {
+        margin-bottom: 15px;
+  
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          text-decoration: underline;
+          font-size: 18px;
+          color: #333;
+          transition: 0.3s;
+  
+          &:hover {
+            color: #fa394a;
+          }
+  
+          svg {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+  
+  .studentContent {
+    flex: 2;
+    padding-left: 40px;
+  
+    h2 {
+      font-size: 42px;
+      color: #001e43;
+      margin-bottom: 15px;
+    }
+  
+    p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 15px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .defaultBtn {
+    display: inline-flex;
+    align-items: center;
+    background: #fa394a;
+    color: #fff;
+    padding: 10px 20px;
+    // border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+  
+    &:hover {
+      background: #0056b3;
+    }
+  
+    svg {
+      margin-left: 8px;
+    }
+  }
+  
